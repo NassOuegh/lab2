@@ -16,6 +16,25 @@
 
   <div id="container">
     <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-card *ngFor="let t of team">
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4">
+              <div>
+                <img src="{{t.url}}" width="100%" />
+              </div>
+            </ion-col>
+            <ion-col size="8">
+              <div>
+                <p style="text-align: left">{{t.nom}}</p>
+                <p style="text-align: left">Numero : {{t.num}}</p>
+                <p style="text-align: left">{{t.bio}}</p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
