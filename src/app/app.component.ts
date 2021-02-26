@@ -11,5 +11,9 @@ export class AppComponent {
     { title: 'Real Madrid', url: '/folder/Real', icon: '/assets/real.png' },
     { title: 'OL', url: '/folder/OL', icon: '/assets/ol.png' },
   ];
+
+  public joueursPages = [
+    { nom: 'Dimitri Payet', url: '/joueurs/payet', photo: '/assets/payet.png', bio: "Attaquant", birthdate: "20/01/1985"}
+  ]
   constructor() {}
 }

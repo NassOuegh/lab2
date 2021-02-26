@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngFor="let j of joueur">
+  <ion-grid>
+    <ion-header><h1 style="background-color: rgb(0, 112, 75); color: azure;">{{j.nom}}</h1></ion-header>
+    <ion-row>
+      <ion-col size="8">
+        <h1>Biography</h1>
+        <p> {{j.bio}} </p>
+      </ion-col>
+      <ion-col size="4">
+        <ion-header>{{j.nom}}</ion-header>
+        <ion-row><img src="{{j.photo}}" alt="{{j.nom}}"></ion-row>
+        <ion-row><ion-card style="background-color: rgb(0, 112, 75); color: azure;">Numero {{j.num}}</ion-card></ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
